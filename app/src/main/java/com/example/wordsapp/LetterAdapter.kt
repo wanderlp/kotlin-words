@@ -62,6 +62,9 @@ class LetterAdapter :
     override fun onBindViewHolder(holder: LetterViewHolder, position: Int) {
         val item = list.get(position)
         holder.button.text = item.toString()
+        holder.button.setOnClickListener {
+
+        }
     }
 
     // Setup custom accessibility delegate to set the text read with
