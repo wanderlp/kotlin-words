@@ -24,3 +24,6 @@ The app demonstrates the use of Intents in two ways:
 2. Download the sample.
 3. Import the sample into Android Studio.
 4. Build and run the sample.
+
+# Started
+https://github.com/google-developer-training/android-basics-kotlin-words-app/tree/starter
