@@ -15,6 +15,7 @@
  */
 package com.example.wordsapp
 
+import android.content.Intent
 import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
@@ -63,7 +64,10 @@ class LetterAdapter :
         val item = list.get(position)
         holder.button.text = item.toString()
         holder.button.setOnClickListener {
-
+            val context = holder.view.context
+            val intent = Intent(context, DetailActivity::class.java)
+            intent.putExtra("letter", holder.button.text.toString())
+            context.startActivity(intent)
         }
     }
 
