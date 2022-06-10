@@ -20,6 +20,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.wordsapp.databinding.ActivityDetailBinding
+import com.example.wordsapp.databinding.FragmentLetterListBinding
 
 
 class DetailActivity : AppCompatActivity() {
