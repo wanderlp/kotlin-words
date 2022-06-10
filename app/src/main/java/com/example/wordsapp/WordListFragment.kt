@@ -2,10 +2,8 @@ package com.example.wordsapp
 
 import android.os.Bundle
 import android.view.*
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.wordsapp.databinding.FragmentWordListBinding
@@ -35,7 +33,7 @@ class WordListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Obtiene el parametro enviado por el activity anterior
-        val letterId = activity?.intent?.extras?.getString(DetailActivity.LETTER).toString()
+        val letterId = activity?.intent?.extras?.getString(WordListFragment.LETTER).toString()
 
         recyclerView = binding.recyclerView
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
